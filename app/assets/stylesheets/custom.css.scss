@@ -1,0 +1,79 @@
+$navbar-default-bg:#880BBA;
+
+
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a:hover
+{
+
+  color:#fff;
+}
+
+.navbar-default .navbar-brand {
+    color: #fffcfc;
+    float: left;
+    font-size:1.7 em;
+    text-transform:uppercase;
+    letter-spacing: -1px;
+    font-weight:bold;
+}
+.navbar-default .navbar-brand:hover
+{
+
+  color:#fff;
+}
+
+.center {
+  text-align:center;
+}
+
+.jumbotron
+{
+
+background-image :asset-url('Purple-wallpaper-12.jpg');
+background-size: cover;
+height: 560px;
+
+}
+
+.jumbotron h1 {
+  color:#fff;
+}
+
+.btn-primary {
+    color: #8c52ba;
+    background-color: #ffffff;
+    border-color: #2e6da4;
+}
+.btn-primary:hover{
+    color: #8c52ba;
+    background-color: #ffffff;
+    border-color: #2e6da4;
+}
+
+footer {
+
+  margin-top:15px;
+
+}
+
+footer ul {
+  float:right;
+  list-style:none;
+}
+
+footer ul li {
+  float:left;
+  margin-left: 15px;
+}
+
+footer small{
+  float:left;
+}

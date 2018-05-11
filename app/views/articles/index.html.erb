@@ -1,27 +1,34 @@
-<h1>listing all articles</h1>
-<p>
-<%= link_to "create new article", new_article_path %>
-</p>
-<table>
+<h1 align="center">listing all articles</h1>
 
-<tr>
-  <th>title</th>
-  <th>description</th>
 
-</tr>
+
 
 <% @articles.each do |article| %>
+<div class="row">
+  <div class="col-xs-8 col-xs-offset-2">
+    <div class="well well-lg">
+      <div class="article-title">
+        <%= link_to article.title, article_path(article) %>
+      </div>
+      <div class="article-body">
+        <%= truncate(article.description, length: 100 )%>
+      </div>
+<div class="article-actions">
+  <%= link_to "edit article", edit_article_path(article), class: "btn btn-xs btn-success" %>
 
-<tr>
+  <%= link_to "delete article", edit_article_path(article), method: :delete, data: { confirm: "are you sure you want to delete this article?"},  class: "btn btn-xs btn-danger" %>
 
-<td><%= article.title %></td>
-<td><%= article.description  %> </td>
-<td> <%= link_to "edit", edit_article_path(article)%></td>
-  <td><%= link_to "show", article_path(article)%></td>
-  <td><%= link_to "delete", article_path(article), method: :delete, data:{confirm: "are you sure ?"} %></td>
-</tr>
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+
 
 <% end %>
 
 
-</table>
+

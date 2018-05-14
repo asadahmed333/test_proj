@@ -7,7 +7,7 @@ validates :username, presence: true, uniqueness: {case_sensitive: false} , lengt
 
 VALID_EMAI_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 
-validates :email, presence: true, uniqueness: {case_sensitive: false} , length: {minimum: 5, maximum: 15},
+validates :email, presence: true, uniqueness: {case_sensitive: false} , length: {minimum: 5, maximum: 45},
 
 format: {with: VALID_EMAI_REGEX}
 
